@@ -1,0 +1,15 @@
+.contain-crts__carta {
+    align-items: center;
+    background-color: var(--branco);
+    display: flex;   
+    justify-content: center;
+    height: 400px;
+    width: 300px;
+}
+
+.carta.luffy {
+    
+    border: 3px solid red;
+    height: 95%;
+    width: 95%;
+}

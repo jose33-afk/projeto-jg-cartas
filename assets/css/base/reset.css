@@ -5,6 +5,7 @@
 }
 
 html, body {
+    display: flex;
     background-color: rgba(53, 48, 48, 0.767);
     font-family: Roboto, sans-serif;
     min-height: 100vh;
