@@ -1,7 +1,7 @@
-@import url(/assets/css/base/normalize.css);
-@import url(/assets/css/base/reset.css);
-@import url(/assets/css/base/variables.css);
+@import url(./base/normalize.css);
+@import url(./base/reset.css);
+@import url(./base/variables.css);
 
-@import url(/assets/css/carta/carta.css);
-@import url(/assets/css/contain-crts/contain-crts.css);
-@import url(/assets/css/main/main.css);
+@import url(./carta/carta.css);
+@import url(./contain-crts/contain-crts.css);
+@import url(./main/main.css);
