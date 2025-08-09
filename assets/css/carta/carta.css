@@ -1,5 +1,5 @@
 .contain-crts__carta {
-    background: url(./assets/img/cartasbanner/later.png); /*personagem*/
+    background: url(/assets/img/cartasbanner/later.png); /*personagem*/
     background-size: 320px 460px; /*largura, altura*/
     background-position: center;
     background-repeat: no-repeat;
@@ -8,7 +8,7 @@
 }
 
 .carta {
-    background: url(./assets/img/cartasbanner/moldura-cartas.png);
+    background: url(/assets/img/cartasbanner/moldura-cartas.png);
     background-size: cover;
     background-position: center;
        
@@ -53,7 +53,37 @@
     padding: 2px 10px;
 }
 
+/*inferior*/
+.carta__contain-inferior {
+    display: grid;
+    grid-template:  1fr / auto 1fr auto ;
+    grid-template-areas: 
+        "inicio meio fim"; /*colunas 1*/
+}
+
+.contain-inferior__nome {
+    grid-area: meio;
+}
+
+.contain-inferior__titolo {
+    grid-area: meio;
+}
+
+.st-atc {
+    grid-area: inicio;
+}
+
+.st-def {
+    grid-area: fim;
+}
 
 
-
-
+/*
+┌─────┬─────┬─────┐
+│inicio│     │     │ "Tudo dentro é uma linha, e separa as colunas com espaço"
+├─────┼─────┼─────┤
+│meio │     │     │
+├─────┼─────┼─────┤
+│fim  │     │     │
+└─────┴─────┴─────┘
+*/
