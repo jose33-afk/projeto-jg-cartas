@@ -1,5 +1,5 @@
 .contain-crts__carta {
-    background: url(/assets/img/cartasbanner/later.png); /*personagem*/
+    background: url(../../img/cartasbanner/later.png); /*personagem*/
     background-size: 320px 460px; /*largura, altura*/
     background-position: center;
     background-repeat: no-repeat;
@@ -8,7 +8,7 @@
 }
 
 .carta {
-    background: url(/assets/img/cartasbanner/moldura-cartas.png);
+    background: url(../../img/cartasbanner/moldura-cartas.png);
     background-size: cover;
     background-position: center;
        
@@ -37,12 +37,22 @@
     border-radius: 8px;
     color: var(--branco);
     font-size: 15px;
+    line-height: 18px;
     margin-bottom: 20px;
     justify-self: center;
+    text-align: justify;
     padding: 5px;
     height: 35%;
     width: 88%;
 }
+
+.carta__dom-descr .st-dom  {
+    background-color: rgb(255, 251, 42);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    padding: 2px 10px;
+}
+
 
 
 
