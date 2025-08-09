@@ -1,5 +1,5 @@
 .contain-crts__carta {
-    background-image: url('../../img/cartasbanner/later.png'); /*personagem*/
+    background-image: url(/assets/img/cartasbanner/later.png); /*personagem*/
     background-size: 320px 460px; /*largura, altura*/
     background-position: center;
     background-repeat: no-repeat;
@@ -8,7 +8,7 @@
 }
 
 .carta {
-    background-image: url('../../img/cartasbanner/moldura-cartas.png');
+    background-image: url(/assets/img/cartasbanner/moldura-cartas.png);
     background-size: cover;
     background-position: center;
        
