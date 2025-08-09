@@ -105,7 +105,7 @@
 }
 
 .img-icon {
-    background: url(/assets/img/icons/akumanum.png);
+    background: url(../../img/icons/akumanum.png);
     background-repeat: no-repeat;
     background-size: contain;
     height: 20px;
@@ -122,7 +122,7 @@
 }
 
 .defesa.img-icon {
-    background: url(/assets/img/icons/vidro.jpg);
+    background: url(../../img/icons/vidro.jpg);
     background-size: cover;
 }
 
