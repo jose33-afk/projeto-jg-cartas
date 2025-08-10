@@ -1,6 +1,8 @@
 main {
     background-color: rgba(102, 15, 15, 0.884);
-    margin: auto;
-    height: 810px;
-    width: 70%;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100%;
+    width: 100%;
 }

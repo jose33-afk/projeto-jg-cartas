@@ -3,6 +3,9 @@
     background-size: 320px 460px; /*largura, altura*/
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    margin-bottom: 10px;
+    list-style: none;
     height: 500px;
     width: 350px;
 }
@@ -13,7 +16,7 @@
     background-position: center;
        
     display: grid;
-    grid-template: 40px 1fr 74px / 1fr;
+    grid-template: .5fr 5.3fr 1fr / 1fr;
     grid-template-areas: 
         "superior"
         "meio"
@@ -79,7 +82,7 @@
     grid-area: meio;
     margin-bottom: 25px;
     height: 20px;
-    width: 13em;
+    width: 100%;
 }
 
 .contain-inferior__titolo--tripulacao {
@@ -141,6 +144,44 @@
     background-color: rgba(0, 255, 255, 0.281);
 }
 
+@media (max-width: 913px) {
+    .carta {
+        display: grid;
+        grid-template: .5fr 5.7fr 1fr / 1fr;
+        grid-template-areas: 
+            "superior"
+            "meio"
+            "inferior";
+    }
+    .contain-crts__carta {
+        height: 410px;
+        width: 300px;
+    }
+
+    .carta__power {
+        margin-right: 32px;
+    }
+
+    .carta__dom-descr {
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 14px;
+        width: 85%;
+    }
+
+    .contain-inferior__titolo {
+        margin-bottom: 13px;
+        width: 100%;
+    }
+
+    .img-icon, .img-icon.defesa {
+        display: none;
+    }
+
+    .para.ataque{
+        margin-left: 10px;
+    }
+}
 /*
 ┌─────┬─────┬─────┐
 │inicio│     │     │ "Tudo dentro é uma linha, e separa as colunas com espaço"
