@@ -1,0 +1,36 @@
+function mostrarPersonagens (ListaPersonagem) {
+    const ElementInserir = document.querySelector('.contain-crts');
+   
+
+    ListaPersonagem.forEach(personagem => {
+        let ListaItem = document.createElement('li');
+        ListaItem.innerHTML = `
+        <li class="contain-crts__carta"> 
+            <div class="carta">
+            <h2 class="carta__power">${personagem.power}</h2>
+            <div class="carta__dom-descr">
+                <p><Strong class="st-dom">Don</Strong>${personagem.habiliDescri}</p>
+            </div> 
+            
+            <div class="carta__contain-inferior">
+                <h2 class="contain-inferior__nome">${personagem.nome}</h2>
+                <div class="ataque geral">
+                    <div class="ataque img-icon"></div>
+                    <p class="ataque para"><span class="dest">ATK</span> ${personagem.ataque}</p>
+                </div>
+                <div class="contain-inferior__titolo">
+                    <p class="contain-inferior__titolo--tripulacao">${personagem.tripulacao}</p>
+                </div>
+                <div class="defesa geral">
+                    <div class="defesa img-icon"></div>
+                    <p class="defesa para"><span class="dest def">DEF</span>${personagem.defesa}</p>
+                </div>
+            </div>
+            </div>
+        </li>
+        `
+        ElementInserir.appendChild(ListaItem)
+    })
+}
+
+export { mostrarPersonagens };
