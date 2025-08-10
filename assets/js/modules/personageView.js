@@ -4,9 +4,12 @@ function mostrarPersonagens (ListaPersonagem) {
 
     ListaPersonagem.forEach(personagem => {
         let ListaItem = document.createElement('li');
+        let arma = '';
+        personagem.classe === 'fruta' ? arma = 'fruta' : arma = 'espada'
+        ListaItem.classList.add('contain-crts__carta', arma)
+
         ListaItem.innerHTML = `
-        <li class="contain-crts__carta"> 
-            <div class="carta">
+            <div class="carta ${arma}">
             <h2 class="carta__power">${personagem.power}</h2>
             <div class="carta__dom-descr">
                 <p><Strong class="st-dom">Don</Strong>${personagem.habiliDescri}</p>
@@ -27,7 +30,6 @@ function mostrarPersonagens (ListaPersonagem) {
                 </div>
             </div>
             </div>
-        </li>
         `
         ElementInserir.appendChild(ListaItem)
     })

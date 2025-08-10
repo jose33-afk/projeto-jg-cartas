@@ -10,6 +10,10 @@
     width: 350px;
 }
 
+.contain-crts__carta.espada {
+    background-image: url(../../img/cartasbanner/download.jfif); /*Tem que por js*/
+}
+
 .carta {
     background-image: url(../../img/cartasbanner/moldura-cartas.png);
     background-size: cover;
@@ -23,6 +27,10 @@
         "inferior";
     height: 100%;
     width: 100%;
+}
+
+.carta.espada {
+    background-image: url(../../img/cartasbanner/moldura-cartas-espada.png);
 }
 
 /*top*/
