@@ -6,6 +6,11 @@ const molduras = {
     vermelha: 'url(./assets/img/molduras/moldura-cartas-vermelha.png)'
 }
 
-export { molduras };
+const fotos = {
+    luffy: 'url(./assets/img/fotosPersonagens/luffy.png)',
+    zoro: 'url(./assets/img/fotosPersonagens/zoro.jfif)'
+}
+
+export { molduras, fotos };
 
 // / {"andyrubin": "andy-rubin-pai-do-android"},
