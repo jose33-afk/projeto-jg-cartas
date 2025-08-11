@@ -1,5 +1,4 @@
 .contain-crts__carta {
-    background-image: url(../../img/cartasbanner/later.png); /*personagem*/
     background-size: 320px 460px; /*largura, altura*/
     background-position: center;
     background-repeat: no-repeat;
@@ -10,9 +9,6 @@
     width: 350px;
 }
 
-.contain-crts__carta.espada {
-    background-image: url(../../img/cartasbanner/download.jfif); /*Tem que por js*/
-}
 
 .carta {
     background-image: url(../../img/cartasbanner/moldura-cartas.png);
