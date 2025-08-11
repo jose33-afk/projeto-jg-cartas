@@ -6,9 +6,10 @@ class Personagems {
     habiliDescri 
     tripulacao 
     classe
-    personaBack
+    foto
+    corMoldura
 
-    constructor(nome, power, ataque, defesa, habiliDescri, tripulacao, classe, personaBack) {
+    constructor(nome, power, ataque, defesa, habiliDescri, tripulacao, classe, foto, corMoldura) {
         this.nome = nome
         this.power = power;
         this.ataque = ataque;
@@ -16,7 +17,8 @@ class Personagems {
         this.habiliDescri = habiliDescri;
         this.tripulacao = tripulacao;
         this.classe = classe
-        this.personaBack = personaBack
+        this.foto = foto
+        this.corMoldura = corMoldura
     }
 }
 

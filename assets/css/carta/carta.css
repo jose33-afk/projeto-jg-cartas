@@ -25,10 +25,6 @@
     width: 100%;
 }
 
-.carta.espada {
-    background-image: url(../../img/cartasbanner/moldura-cartas-espada.png);
-}
-
 /*top*/
 .carta__power {
     align-self: end;
