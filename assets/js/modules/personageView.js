@@ -10,6 +10,7 @@ function mostrarPersonagens (ListaPersonagem) {
 
         ListaItem.classList.add('contain-crts__carta', arma)
         ListaItem.setAttribute('value', ListaPersonagem.indexOf(personagem))//1
+        ListaItem.setAttribute('data-estado', 'off');
         ListaItem.style.backgroundImage =  personagem.foto;
 
         item.classList.add('carta', arma);
