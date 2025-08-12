@@ -1,14 +1,17 @@
 function mostrarPersonagens (ListaPersonagem) {
     const ElementInserir = document.querySelector('.contain-crts');
-    
+
     ListaPersonagem.forEach(personagem => {
         let ListaItem = document.createElement('li');
         let item = document.createElement('div');
         let arma = '';
       
         personagem.classe === 'fruta' ? arma = 'fruta' : arma = 'espada'
+
         ListaItem.classList.add('contain-crts__carta', arma)
+        ListaItem.setAttribute('value', ListaPersonagem.indexOf(personagem))//1
         ListaItem.style.backgroundImage =  personagem.foto;
+
         item.classList.add('carta', arma);
         item.style.backgroundImage =  personagem.corMoldura;
 
@@ -36,8 +39,8 @@ function mostrarPersonagens (ListaPersonagem) {
         ElementInserir.appendChild(ListaItem)
         ListaItem.appendChild(item)
     })
-
-
 }
 
 export { mostrarPersonagens };
+
+// 1 - Vou usar no combate

@@ -9,6 +9,12 @@
     width: 350px;
 }
 
+/*contain-crts__carta = nome*/
+.contain-crts__carta.carta-hover{
+    transform: translate(0, -5px);
+    border: 2px solid blue;
+    transition: .1s ease-in;
+}
 
 .carta {
     background-size: cover;
