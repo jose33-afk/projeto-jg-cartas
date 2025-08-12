@@ -21,7 +21,7 @@ function mostrarPersonagens (ListaPersonagem) {
             <div class="carta__contain-inferior">
                 <h2 class="contain-inferior__nome">${personagem.nome}</h2>
                 <div class="ataque geral">
-                    <div class="ataque img-icon"></div>
+                    <div class="ataque img-icon ${arma}"></div>
                     <p class="ataque para"><span class="dest">ATK</span> ${personagem.ataque}</p>
                 </div>
                 <div class="contain-inferior__titolo">
@@ -40,8 +40,4 @@ function mostrarPersonagens (ListaPersonagem) {
 
 }
 
-
-   
-  
-    
 export { mostrarPersonagens };

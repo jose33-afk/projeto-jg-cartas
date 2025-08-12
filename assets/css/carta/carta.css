@@ -1,6 +1,6 @@
-.contain-crts__carta {
-    background-size: 320px 460px; /*largura, altura*/
-    background-position: center;
+.contain-crts__carta { 
+    background-size: cover; /*largura, altura, personagem.foto*/
+    background-position: center top;
     background-repeat: no-repeat;
     display: flex;
     margin-bottom: 10px;
@@ -11,7 +11,6 @@
 
 
 .carta {
-    
     background-size: cover;
     background-position: center;
        
@@ -32,6 +31,14 @@
     grid-area: superior;
     justify-self: end;
     margin-right: 52px;
+}
+
+.carta__power::before {
+    content: "Power";
+    font-size: 10px;
+    position: relative;
+    top: -19px;
+   left: 19px;
 }
 
 .carta__dom-descr {
@@ -117,6 +124,11 @@
     width: 20px;
 }
 
+.img-icon.espada {
+    background-image: url(../../img/icons/espada.png);
+    background-size: cover;
+}
+
 .img-icon.ataque {
   margin-left: 1px;
 } 
@@ -161,6 +173,7 @@
     }
 
     .carta__power {
+        font-size: 1.3em;
         margin-right: 32px;
     }
 
@@ -182,6 +195,14 @@
 
     .para.ataque{
         margin-left: 10px;
+    }
+
+    .carta__power::before {
+        content: "Power";
+        font-size: 7px;
+        position: relative;
+        top: -17px;
+        left: 5px;
     }
 }
 /*
