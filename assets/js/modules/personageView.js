@@ -11,8 +11,9 @@ function mostrarPersonagens (ListaPersonagem) {
         ListaItem.classList.add('contain-crts__carta', arma)
         ListaItem.setAttribute('value', ListaPersonagem.indexOf(personagem))//1
         ListaItem.setAttribute('data-estado', 'off');
+        ListaItem.setAttribute('data-nome', personagem.nome)
         ListaItem.style.backgroundImage =  personagem.foto;
-
+       
         item.classList.add('carta', arma);
         item.style.backgroundImage =  personagem.corMoldura;
 
@@ -44,4 +45,4 @@ function mostrarPersonagens (ListaPersonagem) {
 
 export { mostrarPersonagens };
 
-// 1 - Vou usar no combate
+// 1 - Vou usar no combate, é pra pegar o obj

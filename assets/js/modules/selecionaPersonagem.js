@@ -4,38 +4,39 @@ function selectPers (lista) {
     const cartas = Array.from(document.querySelectorAll('.contain-crts__carta'));
    
     cartas.forEach(element => {
-        //if (personagensSelect.length === 2) {
-         //  personagensSelect.forEach(element => {
-            //    element.addEventListener('click', () => {
-              //      remove(personagensSelect)
-               // })
-         //  })
-
-       // } else {
-             element.addEventListener('click', () => {
-                if (element.dataset.estado == 'off') {
-                    element.dataset.estado = 'on'
-                    element.classList.add('carta-hover') /*Nao selecionado*/ 
-                    personagensSelect.push(lista[element.value])
-                } else { 
-                    remove(lista)
-                }
-
-                 function remove (array) {
+       
+        element.addEventListener('click', () => {
+            if (element.dataset.estado == 'off') {
+                element.dataset.estado = 'on'
+                element.classList.add('carta-hover') /*Nao selecionado*/ 
+                personagensSelect.push(lista[element.value])
+            } else { 
                 element.dataset.estado = 'off'
-                element.classList.remove('carta-hover')// 2 click - selecionado
+                element.classList.remove('carta-hover')
+              
+                let indice = personagensSelect.findIndex(perSelect => {
+                    return perSelect.nome == element.dataset.nome
+                    
+                })
+        
+                personagensSelect.splice(indice, 1); //2
             }
 
-            })
-
-       // }
-       
-       
+            console.table(personagensSelect)
+           
+        })      
+         
     })
 
 
-    /*Eu tava fazendo um jeito de ter uma funcao pra remover, pra n ter 
-    que repetir codigo la em cima, lembra quando tiver duas cartas selecionadas, tenho que pensar em um jeito de ficar alternado entre a array com selecionados e a e uma funcao pra so adicionar. */
+    /*
+    1 - ele so retorna a posicao do elemento, ele n exuta funcoes dentro
+        dentro so vai o requesito pra pesquisar 
+
+    2 - splice,  o primeiro parâmetro é o índice, o segundo é a             quantidade de elementos que você quer remover a partir desse índice.
+
+    daria pra usar um id, mas n quero mexer nisso, ja que esta funcionando.
+    */
 
     
 
