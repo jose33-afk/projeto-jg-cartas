@@ -7,9 +7,12 @@ function selectPers (lista) {
        
         element.addEventListener('click', () => {
             if (element.dataset.estado == 'off') {
-                element.dataset.estado = 'on'
-                element.classList.add('carta-hover') /*Nao selecionado*/ 
-                personagensSelect.push(lista[element.value])
+                if (personagensSelect.length < 2) {
+                    element.dataset.estado = 'on'
+                    element.classList.add('carta-hover') /*Nao selecionado*/ 
+                    personagensSelect.push(lista[element.value])
+                } else { alert('So é possivel selecionar dois personagens')} //fazer alerta personalizado
+    
             } else { 
                 element.dataset.estado = 'off'
                 element.classList.remove('carta-hover')
