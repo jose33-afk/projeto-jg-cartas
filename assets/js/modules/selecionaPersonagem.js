@@ -8,6 +8,7 @@ function selectPers (lista) {
         element.addEventListener('click', () => {
             if (element.dataset.estado == 'off') {
                 if (personagensSelect.length < 2) {
+                    //Por um while enquanto personagens select <= 1
                     element.dataset.estado = 'on'
                     element.classList.add('carta-hover') /*Nao selecionado*/ 
                     personagensSelect.push(lista[element.value])
@@ -39,6 +40,7 @@ function selectPers (lista) {
     2 - splice,  o primeiro parâmetro é o índice, o segundo é a             quantidade de elementos que você quer remover a partir desse índice.
 
     daria pra usar um id, mas n quero mexer nisso, ja que esta funcionando.
+
     */
 
     
