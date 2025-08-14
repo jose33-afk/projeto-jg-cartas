@@ -46,4 +46,4 @@ function selectPers (lista) {
     
 
 }
-export { selectPers }; 
+export { selectPers, personagensSelect }; 

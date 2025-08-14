@@ -1,30 +1,46 @@
-class combate {
-    personagem1 
-    lutadorDois 
+import { mostrarPersonagens, reset } from "./personageView.js";
+import { pegaElemento } from "./ultils.js";
 
-    constructor(lutadorUm, lutadorDois) {
-        this.lutadorUm = lutadorUm
-        this.lutadorDois = lutadorDois
-    }
+class Combate {
+    static duelo (lutadorUm, lutadorDois, listaLutadores) { //2
+        reset(pegaElemento('.contain-crts'))
+        mostrarPersonagens(listaLutadores)
+        addelement()
+        ativo()
 
-    duelo (ListaDeLutadores) { //1, array personagensSelect
-        if (this.lutadorUm.power > this.lutadorDois.power){ 
-            console.log(`${lutadorUm} ganhou`)
+        //aqui todos os botoes de combate
+
+
+
+        // os metodos ficam fora 
+        //if (lutadorUm.power > lutadorDois.power){ //por uma condicao so se a diferenca for muito grande
+            //console.log(`${lutadorUm.nome} ganhou`)
             //indexOF == pegar indice, continuar amnh
             //return ListaDeLutadores.splice(indice, 1); 
-        }
-        else console(`Lutador ${LutadorDois} ganhou`)
+        //}
+        //else console.log(`Lutador ${lutadorDois.nome} ganhou`) por metodos
     }
+}
 
-    teste() {
-        console.log('eruheruie')
-    }
+
+function ativo() {
+    const cartas = pegaElemento('.contain-crts__carta', 2);
+    cartas.forEach(element => {
+        element.classList.add('carta-hover')
+    })
 
 }
 
-export { combate };
+function addelement() {
+    const elementoInserir = pegaElemento('main')
+    elementoInserir.innerHTML += `
+    <button class="botao-combate encerrar">Encerrar</button>
+    `
+}
+
+export { Combate };
 
 /*
-    1 - É uma clss para ficar organizado, com todos os metodos de combate
-
+    1 - É  uma clss para ficar organizado, com todos os metodos de combate
+    2 - static pra usar os metodos sem instancia
 */
