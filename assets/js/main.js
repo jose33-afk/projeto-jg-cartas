@@ -1,5 +1,4 @@
 import { Personagems } from "./modules/personagens.js";
-import { pegaElemento } from "./modules/ultils.js";
 import { mostrarPersonagens } from "./modules/personageView.js";
 import { molduras, fotos } from "./modules/listas.js";
 import { selectPers } from "./modules/selecionaPersonagem.js";

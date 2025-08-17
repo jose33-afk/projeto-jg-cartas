@@ -1,6 +1,20 @@
 import { mostrarPersonagens, reset } from "./personageView.js";
 import { pegaElemento } from "./ultils.js";
 
+const ativo = () => {
+    const cartas = pegaElemento('.contain-crts__carta', 2);
+    cartas.forEach(element => {
+        element.classList.add('carta-hover')
+    })
+}
+
+const addelement = () => {
+    const elementoInserir = pegaElemento('main')
+    elementoInserir.innerHTML += `
+    <button class="botao-combate encerrar">Encerrar</button>
+    `
+}
+
 class Combate {
     static duelo (lutadorUm, lutadorDois, listaLutadores) { //2
         reset(pegaElemento('.contain-crts'))
@@ -22,21 +36,6 @@ class Combate {
     }
 }
 
-
-function ativo() {
-    const cartas = pegaElemento('.contain-crts__carta', 2);
-    cartas.forEach(element => {
-        element.classList.add('carta-hover')
-    })
-
-}
-
-function addelement() {
-    const elementoInserir = pegaElemento('main')
-    elementoInserir.innerHTML += `
-    <button class="botao-combate encerrar">Encerrar</button>
-    `
-}
 
 export { Combate };
 
