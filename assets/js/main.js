@@ -1,10 +1,9 @@
 import { Personagems } from "./modules/personagens.js";
 import { mostrarPersonagens } from "./modules/personageView.js";
 import { molduras, fotos } from "./modules/listas.js";
-import { selectPers } from "./modules/selecionaPersonagem.js";
+import { selectPers, personagensSelect } from "./modules/selecionaPersonagem.js";
 import { Combate } from "./modules/combate.js";
-import { personagensSelect } from "./modules/selecionaPersonagem.js";
-const botaoPlayCombat = document.querySelector('.botao-combate.play')
+import { pegaElemento } from "./modules/ultils.js";
 
 const Luffy = new Personagems('Luffy', 7000, 420000, 125000, 'Concentra energia elástica em um dos punhos, expandindo-o até 3x o tamanho normal por alguns segundos. O golpe ganha força devastadora e pode atravessar defesas sólidas, mas consome bastante stamina e deixa o braço temporariamente mais lento após o uso.', 'Chapeus de palha', 'fruta', fotos.luffy, molduras.azulesverdiado)
 
@@ -14,19 +13,16 @@ const Donflamingo = new Personagems('Don Flamingo', 9000, 12000, 4000, 'Birdcage
 
 const personagens = [Luffy, Zoro, Donflamingo] 
 
-mostrarPersonagens(personagens);
-selectPers(personagens)
+const carregarFuncoes = () => {
+    mostrarPersonagens(personagens)
+    selectPers(personagens)
+}
 
-botaoPlayCombat.addEventListener('click', () => {
+carregarFuncoes()
+
+pegaElemento('.bnt-combat.play').addEventListener('click', () => {
     if (personagensSelect.length === 2) Combate.duelo(personagensSelect[0], personagensSelect[1], personagensSelect)
     else alert('Selecione 2 personagens primeiro!!!')
 })
 
-/*pegaElemento('.botao-combate.encerrar').addEventListener('click', () => {
-    mostrarPersonagens(personagens)
-    if (personagensSelect)  personagensSelect.splice(0, 2);
-
-    console.log(personagensSelect)
-})*/
-
-//personagensSelect.splice(indice, 1); //2
+export { carregarFuncoes };

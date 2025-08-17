@@ -1,4 +1,5 @@
-import { mostrarPersonagens, reset } from "./personageView.js";
+import { carregarFuncoes } from "../main.js";
+import { mostrarPersonagens} from "./personageView.js";
 import { pegaElemento } from "./ultils.js";
 
 const ativo = () => {
@@ -8,36 +9,30 @@ const ativo = () => {
     })
 }
 
-const addelement = () => {
-    const elementoInserir = pegaElemento('main')
-    elementoInserir.innerHTML += `
-    <button class="botao-combate encerrar">Encerrar</button>
-    `
-}
-
 class Combate {
     static duelo (lutadorUm, lutadorDois, listaLutadores) { //2
-        reset(pegaElemento('.contain-crts'))
+        const cartList = pegaElemento('.contain-crts');
+        const bntEnd = pegaElemento('.bnt-combat.end');
+       
+        cartList.innerHTML = ''
         mostrarPersonagens(listaLutadores)
-        addelement()
         ativo()
+        bntEnd.setAttribute('data-bnt-combate-end', 'on');
 
         //aqui todos os botoes de combate
-
-
-
-        // os metodos ficam fora 
-        //if (lutadorUm.power > lutadorDois.power){ //por uma condicao so se a diferenca for muito grande
-            //console.log(`${lutadorUm.nome} ganhou`)
-            //indexOF == pegar indice, continuar amnh
-            //return ListaDeLutadores.splice(indice, 1); 
-        //}
-        //else console.log(`Lutador ${lutadorDois.nome} ganhou`) por metodos
+        bntEnd.addEventListener('click', () => {
+            listaLutadores.splice(0, 2);
+            cartList.innerHTML = '' 
+            bntEnd.setAttribute('data-bnt-combate-end', 'off');
+            carregarFuncoes()
+        })
     }
 }
 
 
+
 export { Combate };
+
 
 /*
     1 - É  uma clss para ficar organizado, com todos os metodos de combate

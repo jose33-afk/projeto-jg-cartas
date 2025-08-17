@@ -43,10 +43,7 @@ function mostrarPersonagens (ListaPersonagem) {
     })
 }
 
-function reset(element) {
-    element.innerHTML = ''
-}
 
-export { mostrarPersonagens, reset};
+export { mostrarPersonagens };
 
 // 1 - Vou usar no combate, é pra pegar o obj
