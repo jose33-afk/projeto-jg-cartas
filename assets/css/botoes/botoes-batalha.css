@@ -1,0 +1,8 @@
+[data-bnt-combate-end="on"] {
+    opacity: 1;
+    color: red;
+}
+
+[data-bnt-combate-end="off"] {
+    opacity: 0;
+}
