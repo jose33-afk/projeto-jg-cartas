@@ -20,7 +20,8 @@
 .form-contain__txt {
     align-self: flex-start;
     text-align: justify;
-  
+    max-width: 90%;
+    align-self: center;
 }
 
 
@@ -28,4 +29,9 @@
     .contain-main__form-contain {
         grid-area: bottom;
     }
+
+    .form-contain__txt {
+        max-width: 70%;
+    }
+
 }
