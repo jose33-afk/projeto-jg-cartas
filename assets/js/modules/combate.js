@@ -29,8 +29,6 @@ class Combate {
     }
 }
 
-
-
 export { Combate };
 
 

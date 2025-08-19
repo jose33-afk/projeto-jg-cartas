@@ -1,0 +1,47 @@
+.formul {
+    background-color: rgba(255, 254, 251, 0.911);
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    grid-template: 1fr 1fr / 2fr 5fr;
+    grid-template-areas: 
+        "left1 right1"
+        "left2 right2";
+
+    height: 50%;
+    min-height: 300px; /*ajustar dps*/
+    width: 50%;
+    min-width: 400px;
+}
+
+
+.img-perfil {
+    border-radius: 100px;
+    justify-self: center;
+    height: 60%;
+    width: 55%;
+}
+
+/*Jogador Um*/
+.img-perfil.jgr1 {
+    background: url('../../img/gojo.webp');
+    background-size: cover;
+    background-position: center;
+    grid-area: left1;
+}
+
+.formul__contain-input.jgr1 {
+    grid-area:right1;
+}
+
+/*Jogador Dois*/
+.img-perfil.jgr2 {
+    background: url('../../img/sakana.webp');
+    background-size: cover;
+    background-position: center;
+    grid-area: left2;
+}
+
+.formul-contain-input.jgr2 {
+    grid-area: right2;
+}

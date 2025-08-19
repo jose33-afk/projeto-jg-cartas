@@ -1,0 +1,10 @@
+body {
+    background:  url('../../img/bakground-pag-login.jpg') red;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
