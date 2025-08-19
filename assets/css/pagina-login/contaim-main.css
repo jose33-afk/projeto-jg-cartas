@@ -1,0 +1,55 @@
+.contain-main {
+    background-color: var(--azul-var1);
+    border-radius: 15px;
+    display: grid;
+    overflow: hidden;
+    grid-template: 1fr / 1fr 1fr;
+    grid-template-areas: 
+        "left right"
+    ;
+
+    min-height: 42%;
+    width: 50%;
+}
+
+.contain-main__img {
+    background: url('../../img/687e453c508d4d8d6c090177a541a688.jpg');
+    background-size: cover;
+    background-position: center;
+    grid-area: right;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 1222px) {
+   .contain-main {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr;
+        grid-template-areas: 
+            "top"
+            "bottom"
+        ;
+
+        height: 70%;
+        min-width:70%;
+    }
+
+    .contain-main__img {
+        grid-area: top;
+    }
+}
+
+@media (max-width: 768px) {
+   /* Estilos para celular */
+     .contain-main {
+        display: grid;
+        grid-template: 1fr 2fr / 1fr; /*tem que repitir :/*/
+        grid-template-areas: 
+            "top"
+            "bottom"
+        ;
+        border-radius: 0;
+        min-height: 100%;
+        min-width: 100%;
+    }
+}

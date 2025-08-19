@@ -1,10 +1,12 @@
 body {
-    background: linear-gradient(19deg, var(--corUm), var(--corDois));
+    background: linear-gradient(275deg, black, var(--azul));
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 

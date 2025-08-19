@@ -3,4 +3,6 @@
 @import url(./base/variables.css);
 
 @import url(./pagina-login/body.css);
-@import url(./pagina-login/formulario.css);
+@import url(./pagina-login/contaim-main.css);
+@import url(./pagina-login/form-contain.css);
+@import url(./pagina-login/form-inputs.css);

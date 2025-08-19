@@ -2,9 +2,10 @@
     --branco: white;
     --font-nserie: "Mozilla Headline", sans-serif;
 
-    --corUm: #0442BF;
-    --corDois: #05C7F2;
-    --corTres: #F9C326;
-    --corQuatro: #01A046;
+    --azul: #0442BF;
+    --azul-var1: #02173f;
+    --azul-var2: #05C7F2;
+    --yellow: #F9C326;
+    --green: #01A046;
     --corCinco: #BF2121;
 }

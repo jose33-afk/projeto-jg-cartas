@@ -1,0 +1,31 @@
+.contain-main__form-contain {
+    background: url('../../img/luffykid.png');
+    background-repeat: no-repeat;
+    background-position: bottom left 5px; /*10px space*/
+    background-size: 40px 40px;
+    color: var(--branco);
+    display: flex;
+    padding: 10px;
+    flex-flow: column nowrap;
+    align-items: center;
+    grid-area: left;
+    height: 100%;
+    width: 100%;
+}
+
+.form-contain__titolo {
+    margin-bottom: 5px;
+}
+
+.form-contain__txt {
+    align-self: flex-start;
+    text-align: justify;
+  
+}
+
+
+@media (max-width: 1222px) {
+    .contain-main__form-contain {
+        grid-area: bottom;
+    }
+}
