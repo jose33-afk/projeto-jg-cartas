@@ -8,19 +8,21 @@
      <script type="module" src="./assets/js/main.js"  defer></script>
 </head>
 <body>
-    <form class="formul">
-        <div class="img-perfil jgr1"></div>
-        <div class="formul__contain-input">
-            <label for="contain-input__nome jgr1">Nome</label>
-            <input type="text" name="contain-input__input" id="contain-input__nome jgr1" placeholder="Nome Jogador Um">
-        </div>
+    <section class="contain-main">
+        <div class="contain-main__img"></div> 
 
-        <div class="img-perfil jgr2"></div>
-        <div class="formul-contain-input">
-            <label for="contain-input__nome jgr2">Nome</label>
-            <input type="text" name="contain-input__input" id="contain-input__nome jgr2" placeholder="Nome Jogador Dois">
-        </div>
+        <section class="contain-main__form-contain">
+            <div class="form-contain__img"></div> <!--Logo do jg-->
+            <h2 class="form-contain__titolo">Welcome back</h2>
 
-    </form>
+            <form class="form-contain__form-inputs">
+                <input type="text" name="form-inputs__nome" id="form-inputs__nome" placeholder="Nome do primeiro Jogador" required autocomplete="name" maxlength="12">
+                
+                <input type="text" name="form-inputs__nome" id="form-inputs__nome" placeholder="Nome do Segundo Jogador" required autocomplete="name"  maxlength="12">
+
+                <input type="submit" value="Sign In">
+            </form>
+        </section>
+    </section> 
 </body>
 </html>

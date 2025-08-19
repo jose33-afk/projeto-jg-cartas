@@ -1,5 +1,5 @@
 body {
-    background:  url('../../img/bakground-pag-login.jpg') red;
+    background: linear-gradient(19deg, var(--corUm), var(--corDois));
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
