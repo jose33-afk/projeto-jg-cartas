@@ -1,0 +1,11 @@
+.contain {
+    display: grid;
+    grid-template: .5fr 3fr 1.3fr / 3.2fr 1fr; 
+    grid-template-areas: 
+        "primeira-linha segunda-col"
+        "segunda-linha segunda-col"
+        "terceira-linha terceira-col"
+    ;
+    height: 100%;
+    width: 100%;
+}
