@@ -1,7 +1,11 @@
 .contain-crts {
-    align-content: space-between;
+    align-content: flex-start;
     display: flex;
-    justify-content: space-evenly;
-    flex-flow: row nowrap;
-    grid-area: segunda-linha;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    grid-area: meio;
+    padding: 10px;
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
 }

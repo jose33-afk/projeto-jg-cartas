@@ -4,5 +4,8 @@
 
 @import url(./carta/carta.css);
 @import url(./contain-crts/contain-crts.css);
-@import url(./contain-section/section-contain.css);
+@import url(./contain-main/section-contain.css);
 @import url(./botoes/botoes-batalha.css);
+@import url(./top-bar/top-bar.css);
+@import url(./contain-inferior/parte-inferior.css);
+@import url(./contain-perfil/perfil.css);

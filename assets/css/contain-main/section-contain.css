@@ -1,0 +1,11 @@
+.contain-main {
+    display: grid;
+    grid-template: .3fr 2.5fr 1.2fr / 3.2fr 1fr; 
+    grid-template-areas: 
+        "topo topo"
+        "meio  perfil"
+        "inferior perfil"
+    ;
+    height: 100%;
+    width: 100%;
+}

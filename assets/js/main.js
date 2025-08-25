@@ -11,7 +11,7 @@ const Zoro = new Personagems('Zoro', 5000, 44000, 50000, 'Zoro concentra toda su
 
 const Donflamingo = new Personagems('Don Flamingo', 9000, 12000, 4000, 'Birdcage Doflamingo cria uma cúpula gigante de fios transparentes e indestrutíveis que aprisiona uma área inteira. A gaiola mortal se fecha lentamente, forçando todos os prisioneiros dentro dela a lutar desesperadamente entre si para sobreviver.', 'Piratas Donquixote', 'fruta', fotos.donflamingo, molduras.rosa)
 
-const personagens = [Luffy, Zoro, Donflamingo] 
+const personagens = [Luffy, Zoro, Donflamingo, Donflamingo, Donflamingo] 
 
 const carregarFuncoes = () => {
     mostrarPersonagens(personagens)

@@ -1,0 +1,5 @@
+.contain-perfil {
+    border-top-left-radius: 15px;
+    background: linear-gradient(211deg, rgba(0, 0, 0, 0.37), black);
+    grid-area: perfil;
+}
